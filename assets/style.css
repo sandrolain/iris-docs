@@ -1,0 +1,57 @@
+@import url("./iris.min.css");
+
+:root {
+	--ird-bg-color: #F8F8F8;
+	/* use same background color of prism.js default style */
+	--ird-prism-bg-color: #f5f2f0;
+}
+
+body {
+	background: var(--ird-bg-color);
+}
+
+.ird-page {
+
+}
+	.ird-page__head {
+		text-align: center;
+		padding: 2em;
+	}
+	.ird-page__foot {
+		padding: 2em;
+		text-align: center;
+		color: #999999;
+	}
+
+
+
+.ird-comment {
+	border-bottom: 1px solid #CCCCCC;
+	padding: 2em 0;
+}
+	.ird-comment__head {
+		margin-bottom: 1em;
+	}
+
+.ird-example,
+.ird-code {
+	margin: 2em 0;
+}
+
+.ird-example__render::after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+}
+
+
+.ird-text {
+	margin: 1em 0;
+}
+
+/* fix prism style */
+pre[class*="language-"] {
+	padding: 0 !important;
+	background: var(--ird-bg-color) !important;
+}
